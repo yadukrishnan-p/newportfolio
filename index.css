@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rampart+One&family=Shantell+Sans:wght@300&family=Tilt+Prism&family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 84%;
+    margin-left: 100px;
+}
+
+/* desodent selector */
+nav .logo {
+    width: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    /* margin-top,left = 10px   ,   margin-bottom,right = 20px   <=   easy way */
+    margin: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* pseudo class effect */
+nav ul li a:hover {
+    /* apply style */
+    color: brown;
+}
+
+.title {
+    margin-left: 8%;
+    margin-top: 13%;
+
+}
+
+.title h1 {
+    font-size: 50px;
+    color: greenyellow;
+    margin-bottom: 20px;
+}
+
+.title span {
+    color: green;
+    font-size: 50px;
+}
+
+.title p {
+    font-weight: bold;
+    line-height: 25px;
+    color: black;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.title a {
+    background-color: #174ea6;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 20px;
+    border-radius: 5px;
+}
+
+.image {
+    top: 200px;
+    right: 30px;
+    bottom: 3px;
+    width: 40%;
+    height: 80%;
+    position: absolute;
+}
+
+#about {
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.heading {
+    text-align: center;
+    margin-right: 8%;
+}
+
+.heading h2 {
+    font-size: 30px;
+}
+
+.heading span {
+    font-size: 20px;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.about-contant {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.about-img img {
+    width: 40%;
+    height: 10.5rem;
+    border-radius: 1rem;
+}
+
+.about-text {
+    margin-right: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.information {
+    margin: 1rem 0 1.4rem;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+}
+
+.information .info-box span {
+    font-weight: 700;
+    padding: 5px;
+    margin-left: 12px;
+}
+
+/* scroll smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+/* skills */
+#skill {
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.skill_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#image {
+    width: 40%;
+    height: 11.5rem;
+    object-position: center;
+    padding-left: 4rem;
+    margin-top: 30px;
+}
+.bar-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.bar-box h3,span{
+    font-weight: 1000;
+    font-size: 1.1rem;
+}
+.light-bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: brown;
+    border-radius: 5px;
+}
+.percent-bar{
+     position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: aquamarine;
+    
+}
+.html-bar{
+    width: 93%;
+}
+.css-bar{
+    width: 92%;
+}
+.js-bar{
+    width: 90%;
+}
+.react-bar{
+    width: 87%;
+}
+
+#contact{
+    margin-left: 8%;
+    margin-top: 13%;
+    /* margin-right: 1%; */
+}
+.icon-div{
+  margin-right: 80px;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 13px;
+}
+.icon:hover{
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+    color: azure;
+}
+footer{
+    
+    margin-top: 2rem;
+    font-family: 'Gill Sans',  'Trebuchet MS', sans-serif;
+}
+.up-arrow{
+    float: right;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem;
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+    
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #174ea6;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+}
